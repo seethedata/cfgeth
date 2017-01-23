@@ -1,0 +1,7 @@
+---
+applications:
+- name: blockparty-geth
+  memory: 2048M
+buildpack: binary_buildpack
+health-check-type: none
+

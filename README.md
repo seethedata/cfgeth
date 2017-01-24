@@ -17,7 +17,7 @@ To push Ethereum geth to Cloud Foundry, run the following steps:
 2. Clone this repo with `git clone https://github.com/seethedata/cfgeth`. This will pull all of the other required files to push geth to Cloud Foundry.
 3. Run `cd cfgeth` to change into the cfgeth directory.
 4. Copy the geth binary produced in step one to the `cfgeth` directory. If the `cfgeth` and `go-ethereum` directories are at the same directory level, you can run `cp ../go-ethereum/build/bin/geth .` to copy it.
-5. Edit the `manifest.yml` and change the `name:` value to what you want your geth instance to be called.
+5. Edit the `manifest.yml` and change the `name:` value to what you want your geth instance to be called. Also, if you want to change the memory or disk size you can edit the `memory:` or `disk_quota:` values respectively.
 6. Use the Cloud Foundry cli to set your endpoint you want to push to with `cf api` and login with `cf login`. 
 7. Push the app with `cf push`.
 

@@ -1,5 +1,5 @@
 # cfgeth - pushing a single node of Ethereum to Cloud Foundry
-Getting a single-node of Ethereum geth running on Cloud Foundry is not difficult, but it is also not straightforward. After getting things up and running, I wanted to document the lessons learned so that others can get things up and running more quickly. We use the Cloud Foundry binary buildpack to run a geth executable that was already compiled on Linux.
+Getting a single-node of Ethereum geth running on Cloud Foundry is not difficult, but it is also not straightforward. After getting things up and running, I wanted to document the lessons learned so that others can get things up and running more quickly. We use the Cloud Foundry binary buildpack to run a geth executable that was already compiled on Ubuntu Linux.
 
 Here are a few things to keep in mind when pushing geth to Cloud Foundry:
 ---

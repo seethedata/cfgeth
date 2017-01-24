@@ -2,5 +2,5 @@ if [[ !  -d .ethereum ]] ; then
 mkdir .ethereum
 tar xzf genesis_ethereum.tar.gz -C .ethereum
 fi
-./geth --nodiscover --cache=1024 --rpc --rpcaddr 0.0.0.0 --rpcport $PORT --rpccorsdomain "*" --rpcapi "db,eth,net,web3,personal,debug" --mine minerthreads 1
+./geth --nodiscover --cache=1024 --rpc --rpcaddr 0.0.0.0 --rpcport $PORT --rpccorsdomain "*" --rpcapi "db,eth,net,web3,personal,debug,txpool,miner" --mine minerthreads 1 
 

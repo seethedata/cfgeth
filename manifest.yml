@@ -2,6 +2,7 @@
 applications:
 - name: bpg
   memory: 2048M
+  disk_quota: 2048M
 buildpack: binary_buildpack
 health-check-type: none
 command: ./start

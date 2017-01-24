@@ -1,0 +1,1 @@
+var houseContract="0x4845d11aeed99d5b94742aa4bb684eba96b20e94";

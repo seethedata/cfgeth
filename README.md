@@ -1,2 +1,2 @@
 # cfgeth
-geth on Cloud Foundry
+Running a single-node of geth on Cloud Foundry.

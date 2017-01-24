@@ -22,6 +22,7 @@ To push Ethereum geth to Cloud Foundry, run the following steps:
 7. Push the app with `cf push`.
 8. Once the app is running, you can connect using `geth` or the web3 api. To use `geth`, run the command `./geth attach http://yourappname.yourdomain.com`. To use the javascript web3 api, enter the line `web3.setProvider(new web3.providers.HttpProvider('http://yourappname.yourdomain.com'));` in your code. Again, note that no port is specified so the default HTTP port 80 will be used.
 
+Notes:
 ---
 * Running the above commands will create a geth node running in Cloud Foundry with a base blockchain already created and a miner thread started. This base blockchain is stored in the file `genesis_ethereum.tar.gz`. We put this blockchain in so that we can start geth with a miner thread running. If you want to start with an empty blockchain, you can edit the `start` script and remove the first 4 lines, as well as remove the `--mine minerthreads 1` argument from the `geth` command.
 * Right now, `geth` is started with a cache size of 1024MB. If you want more, in the `start` script, change the 1024 in the argument `--cache=1024` to the desired value. Just make sure you don't exceed the amount of RAM you specified in the manifest.yml file.
